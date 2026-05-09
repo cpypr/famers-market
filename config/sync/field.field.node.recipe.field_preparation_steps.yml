@@ -1,0 +1,19 @@
+uuid: 2c996a22-4c7d-473a-83a4-bcf31e55c64f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_preparation_steps
+    - node.type.recipe
+id: node.recipe.field_preparation_steps
+field_name: field_preparation_steps
+entity_type: node
+bundle: recipe
+label: 'Preparation steps'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

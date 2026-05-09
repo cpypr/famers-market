@@ -1,0 +1,51 @@
+uuid: ea2ddfbc-1050-44ae-884f-d6d0f478f01b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.recipe.field_ingredients
+    - field.field.node.recipe.field_photo
+    - field.field.node.recipe.field_preparation_steps
+    - node.type.recipe
+  module:
+    - image
+    - user
+id: node.recipe.default
+targetEntityType: node
+bundle: recipe
+mode: default
+content:
+  field_ingredients:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 103
+    region: content
+  field_photo:
+    type: image
+    label: hidden
+    settings:
+      image_link: ''
+      image_style: ''
+      image_loading:
+        attribute: lazy
+    third_party_settings: {  }
+    weight: 101
+    region: content
+  field_preparation_steps:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 104
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  langcode: true

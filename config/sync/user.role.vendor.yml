@@ -1,0 +1,20 @@
+uuid: 0bad0141-34c2-42a7-9e59-b8e0d504d12c
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.recipe
+    - node.type.vendor
+  module:
+    - node
+id: vendor
+label: Vendor
+weight: 4
+is_admin: false
+permissions:
+  - 'create recipe content'
+  - 'create vendor content'
+  - 'edit own recipe content'
+  - 'edit own vendor content'
+  - 'revert vendor revisions'
+  - 'view vendor revisions'
