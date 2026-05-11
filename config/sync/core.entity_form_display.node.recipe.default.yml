@@ -3,9 +3,10 @@ langcode: en
 status: true
 dependencies:
   config:
-    - field.field.node.recipe.field_ingredients
-    - field.field.node.recipe.field_photo
-    - field.field.node.recipe.field_preparation_steps
+    - field.field.node.recipe.field_recipe_image
+    - field.field.node.recipe.field_recipe_ingredients
+    - field.field.node.recipe.field_recipe_preparation_steps
+    - field.field.node.recipe.field_submitted_by
     - image.style.thumbnail
     - node.type.recipe
   module:
@@ -22,9 +23,17 @@ content:
     region: content
     settings: {  }
     third_party_settings: {  }
-  field_ingredients:
+  field_recipe_image:
+    type: image_image
+    weight: 125
+    region: content
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+  field_recipe_ingredients:
     type: entity_reference_autocomplete
-    weight: 123
+    weight: 127
     region: content
     settings:
       match_operator: CONTAINS
@@ -32,19 +41,21 @@ content:
       size: 60
       placeholder: ''
     third_party_settings: {  }
-  field_photo:
-    type: image_image
-    weight: 121
-    region: content
-    settings:
-      progress_indicator: throbber
-      preview_image_style: thumbnail
-    third_party_settings: {  }
-  field_preparation_steps:
+  field_recipe_preparation_steps:
     type: string_textfield
-    weight: 124
+    weight: 126
     region: content
     settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_submitted_by:
+    type: entity_reference_autocomplete
+    weight: 128
+    region: content
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
       size: 60
       placeholder: ''
     third_party_settings: {  }

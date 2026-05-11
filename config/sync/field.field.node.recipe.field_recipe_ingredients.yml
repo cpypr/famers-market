@@ -1,16 +1,16 @@
-uuid: 391f5750-35f6-4e2e-98c8-f9c5241d85f7
+uuid: 740eed9f-55a4-4012-801f-25e11cf8f08f
 langcode: en
 status: true
 dependencies:
   config:
-    - field.storage.node.field_ingredients
+    - field.storage.node.field_recipe_ingredients
     - node.type.recipe
     - taxonomy.vocabulary.ingredients
-id: node.recipe.field_ingredients
-field_name: field_ingredients
+id: node.recipe.field_recipe_ingredients
+field_name: field_recipe_ingredients
 entity_type: node
 bundle: recipe
-label: 'Ingredients for this recipe'
+label: 'Recipe ingredients'
 description: ''
 required: true
 translatable: false

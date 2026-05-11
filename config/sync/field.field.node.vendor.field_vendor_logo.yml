@@ -1,29 +1,29 @@
-uuid: be12361b-b2a7-4aee-92cc-2d32f75e836c
+uuid: af934cd2-e644-4815-a6af-432a566362fb
 langcode: en
 status: true
 dependencies:
   config:
-    - field.storage.node.field_logo
+    - field.storage.node.field_vendor_logo
     - node.type.vendor
   module:
     - image
-id: node.vendor.field_logo
-field_name: field_logo
+id: node.vendor.field_vendor_logo
+field_name: field_vendor_logo
 entity_type: node
 bundle: vendor
-label: Logo
+label: 'Vendor logo'
 description: ''
-required: false
+required: true
 translatable: false
 default_value: {  }
 default_value_callback: ''
 settings:
   handler: 'default:file'
   handler_settings: {  }
-  file_directory: '[date:custom:Y]-[date:custom:m]'
+  file_directory: vendors
   file_extensions: 'png gif jpg jpeg webp'
-  max_filesize: ''
-  max_resolution: ''
+  max_filesize: '5 MB'
+  max_resolution: 600x596
   min_resolution: ''
   alt_field: true
   alt_field_required: true

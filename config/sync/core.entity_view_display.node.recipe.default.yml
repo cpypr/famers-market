@@ -3,9 +3,11 @@ langcode: en
 status: true
 dependencies:
   config:
-    - field.field.node.recipe.field_ingredients
-    - field.field.node.recipe.field_photo
-    - field.field.node.recipe.field_preparation_steps
+    - field.field.node.recipe.field_recipe_image
+    - field.field.node.recipe.field_recipe_ingredients
+    - field.field.node.recipe.field_recipe_preparation_steps
+    - field.field.node.recipe.field_submitted_by
+    - image.style.large
     - node.type.recipe
   module:
     - image
@@ -15,32 +17,40 @@ targetEntityType: node
 bundle: recipe
 mode: default
 content:
-  field_ingredients:
+  field_recipe_image:
+    type: image
+    label: hidden
+    settings:
+      image_link: ''
+      image_style: large
+      image_loading:
+        attribute: lazy
+    third_party_settings: {  }
+    weight: 105
+    region: content
+  field_recipe_ingredients:
     type: entity_reference_label
     label: above
     settings:
       link: true
     third_party_settings: {  }
-    weight: 103
+    weight: 107
     region: content
-  field_photo:
-    type: image
-    label: hidden
-    settings:
-      image_link: ''
-      image_style: ''
-      image_loading:
-        attribute: lazy
-    third_party_settings: {  }
-    weight: 101
-    region: content
-  field_preparation_steps:
+  field_recipe_preparation_steps:
     type: string
     label: above
     settings:
       link_to_entity: false
     third_party_settings: {  }
-    weight: 104
+    weight: 106
+    region: content
+  field_submitted_by:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 108
     region: content
   links:
     settings: {  }

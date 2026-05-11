@@ -1,0 +1,33 @@
+uuid: 65d66afc-15b1-42a8-a44d-d235803726a2
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.vendor
+  module:
+    - language
+    - node
+id: vendor_path
+label: 'Vendor path'
+type: 'canonical_entities:node'
+pattern: '/vendor/[node:title]'
+selection_criteria:
+  65b17c0c-8d3f-45a8-b70f-ca4cfdfb4a29:
+    id: 'entity_bundle:node'
+    negate: false
+    context_mapping:
+      node: node
+    bundles:
+      vendor: vendor
+  3bd502b2-dcc3-4b2d-be26-1223ba551cad:
+    id: language
+    negate: false
+    context_mapping:
+      language: 'node:langcode:language'
+    langcodes:
+      en: en
+selection_logic: and
+weight: -10
+relationships:
+  'node:langcode:language':
+    label: Language

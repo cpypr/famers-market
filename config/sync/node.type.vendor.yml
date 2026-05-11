@@ -11,8 +11,8 @@ third_party_settings:
     parent: 'main:'
 name: Vendor
 type: vendor
-description: null
+description: 'Information about a vendor'
 help: null
 new_revision: true
 preview_mode: 1
-display_submitted: true
+display_submitted: false

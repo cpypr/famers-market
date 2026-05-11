@@ -1,0 +1,33 @@
+uuid: 18662e35-71e1-4aed-bc64-1721775ccc11
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.recipe
+  module:
+    - language
+    - node
+id: recipe_path
+label: 'Recipe path'
+type: 'canonical_entities:node'
+pattern: '/recipe/[node:title]'
+selection_criteria:
+  7453514e-d9dc-4c98-8730-92132ff4cb05:
+    id: 'entity_bundle:node'
+    negate: false
+    context_mapping:
+      node: node
+    bundles:
+      recipe: recipe
+  b42173cc-7907-4b0f-858c-8187b86a4fe7:
+    id: language
+    negate: false
+    context_mapping:
+      language: 'node:langcode:language'
+    langcodes:
+      en: en
+selection_logic: and
+weight: -10
+relationships:
+  'node:langcode:language':
+    label: Language

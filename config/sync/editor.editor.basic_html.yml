@@ -13,19 +13,17 @@ editor: ckeditor5
 settings:
   toolbar:
     items:
+      - heading
       - bold
       - italic
       - '|'
       - link
-      - '|'
+      - blockQuote
       - bulletedList
       - numberedList
-      - '|'
-      - blockQuote
-      - drupalInsertImage
-      - '|'
-      - heading
       - code
+      - drupalInsertImage
+      - horizontalLine
       - '|'
       - sourceEditing
   plugins:
@@ -40,7 +38,7 @@ settings:
       allow_resize: true
     ckeditor5_list:
       properties:
-        reversed: false
+        reversed: true
         startIndex: true
         styles: true
       multiBlock: true

@@ -1,18 +1,18 @@
-uuid: 437b924a-b002-4af9-8f4e-0be6df11e48e
+uuid: eb680267-b591-4418-bf10-9506982c5ebe
 langcode: en
 status: true
 dependencies:
   config:
-    - field.storage.node.field_link
+    - field.storage.node.field_vendor_link
     - node.type.vendor
   module:
     - link
-id: node.vendor.field_link
-field_name: field_link
+id: node.vendor.field_vendor_link
+field_name: field_vendor_link
 entity_type: node
 bundle: vendor
-label: Link
-description: 'Link to your own website'
+label: 'Vendor link'
+description: ''
 required: false
 translatable: false
 default_value: {  }

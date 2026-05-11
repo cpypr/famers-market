@@ -1,29 +1,29 @@
-uuid: 21f55a74-fc7d-4ede-bce5-70bba2f18a3e
+uuid: f15d194f-7dc9-414c-9aca-dbd912401c42
 langcode: en
 status: true
 dependencies:
   config:
-    - field.storage.node.field_photo
+    - field.storage.node.field_recipe_image
     - node.type.recipe
   module:
     - image
-id: node.recipe.field_photo
-field_name: field_photo
+id: node.recipe.field_recipe_image
+field_name: field_recipe_image
 entity_type: node
 bundle: recipe
-label: Image
+label: 'Recipe image'
 description: ''
-required: false
+required: true
 translatable: false
 default_value: {  }
 default_value_callback: ''
 settings:
   handler: 'default:file'
   handler_settings: {  }
-  file_directory: '[date:custom:Y]-[date:custom:m]'
+  file_directory: recipes
   file_extensions: 'png gif jpg jpeg webp'
-  max_filesize: ''
-  max_resolution: ''
+  max_filesize: '5 MB'
+  max_resolution: 600x600
   min_resolution: ''
   alt_field: true
   alt_field_required: true

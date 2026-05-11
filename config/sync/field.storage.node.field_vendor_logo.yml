@@ -1,4 +1,4 @@
-uuid: d03152ab-92c0-4b84-ace4-c0f0eeeb3464
+uuid: e4166b17-a924-4949-b245-c8dbff36a396
 langcode: en
 status: true
 dependencies:
@@ -6,8 +6,8 @@ dependencies:
     - file
     - image
     - node
-id: node.field_logo
-field_name: field_logo
+id: node.field_vendor_logo
+field_name: field_vendor_logo
 entity_type: node
 type: image
 settings:
@@ -18,7 +18,7 @@ settings:
   default_image:
     uuid: ''
     alt: ''
-    title: 'Upload your logo'
+    title: ''
     width: null
     height: null
 module: image

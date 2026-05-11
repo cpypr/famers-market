@@ -2,14 +2,14 @@ _core:
   default_config_hash: ijfbzDTN4CbE7Sr-6ubWzy_t1vH4OtU1doNCLssVz-4
 langcode: en
 uuid: 2d9bfc09-530e-4b26-89f4-0bbb14f878c4
-name: 'Drush Site-Install'
+name: 'Farmers Market'
 mail: admin@example.com
-slogan: ''
+slogan: 'Fresh. Local. Delicious.'
 page:
   403: ''
   404: ''
-  front: /node
+  front: /node/4
 admin_compact_mode: false
 weight_select_max: 100
 default_langcode: en
-mail_notification: null
+mail_notification: noreply@example.com

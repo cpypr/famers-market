@@ -1,20 +1,18 @@
-uuid: cb3d1328-60d2-4405-98f2-307bbbd18570
+uuid: 543f1585-bb57-4530-b956-2a60c671cfcd
 langcode: en
 status: true
 dependencies:
   module:
     - node
-id: node.field_preparation_steps
-field_name: field_preparation_steps
+id: node.field_submitted_by
+field_name: field_submitted_by
 entity_type: node
-type: string
+type: entity_reference
 settings:
-  max_length: 255
-  case_sensitive: false
-  is_ascii: false
+  target_type: node
 module: core
 locked: false
-cardinality: -1
+cardinality: 1
 translatable: true
 indexes: {  }
 persist_with_no_fields: false

@@ -1,0 +1,22 @@
+uuid: 3985f997-b096-4c7d-a63d-5d7d6d9ff63b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_vendor_description
+    - node.type.vendor
+  module:
+    - text
+id: node.vendor.field_vendor_description
+field_name: field_vendor_description
+entity_type: node
+bundle: vendor
+label: 'Vendor description'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  allowed_formats: {  }
+field_type: text_long

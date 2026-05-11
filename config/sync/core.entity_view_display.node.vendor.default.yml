@@ -4,15 +4,16 @@ status: true
 dependencies:
   config:
     - field.field.node.vendor.field_address
-    - field.field.node.vendor.field_description
-    - field.field.node.vendor.field_link
-    - field.field.node.vendor.field_logo
     - field.field.node.vendor.field_mail
+    - field.field.node.vendor.field_vendor_description
+    - field.field.node.vendor.field_vendor_link
+    - field.field.node.vendor.field_vendor_logo
     - node.type.vendor
   module:
     - address
     - image
     - link
+    - text
     - user
 id: node.vendor.default
 targetEntityType: node
@@ -26,14 +27,21 @@ content:
     third_party_settings: {  }
     weight: 105
     region: content
-  field_description:
+  field_mail:
     type: basic_string
     label: above
     settings: {  }
     third_party_settings: {  }
-    weight: 103
+    weight: 101
     region: content
-  field_link:
+  field_vendor_description:
+    type: text_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 108
+    region: content
+  field_vendor_link:
     type: link
     label: above
     settings:
@@ -43,9 +51,9 @@ content:
       rel: ''
       target: ''
     third_party_settings: {  }
-    weight: 104
+    weight: 106
     region: content
-  field_logo:
+  field_vendor_logo:
     type: image
     label: above
     settings:
@@ -54,14 +62,7 @@ content:
       image_loading:
         attribute: lazy
     third_party_settings: {  }
-    weight: 102
-    region: content
-  field_mail:
-    type: basic_string
-    label: above
-    settings: {  }
-    third_party_settings: {  }
-    weight: 101
+    weight: 107
     region: content
   links:
     settings: {  }

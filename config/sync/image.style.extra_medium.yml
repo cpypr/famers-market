@@ -1,0 +1,21 @@
+uuid: e67c3176-ccb1-4d2e-85ac-23b0d748c9a7
+langcode: en
+status: true
+dependencies: {  }
+name: extra_medium
+label: 'Extra medium & optimize'
+effects:
+  a6381249-1ab5-4a8a-b491-7f75085296b4:
+    uuid: a6381249-1ab5-4a8a-b491-7f75085296b4
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 300
+      height: 200
+      anchor: center-center
+  9052cde1-f764-4e8f-8836-2d987491bb6c:
+    uuid: 9052cde1-f764-4e8f-8836-2d987491bb6c
+    id: image_convert_avif
+    weight: 2
+    data:
+      extension: webp
