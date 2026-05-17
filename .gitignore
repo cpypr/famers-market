@@ -1,15 +1,36 @@
-.vscode/
-
 /vendor/
-web/core/
-web/modules/contrib/
-web/themes/contrib/
-web/profiles/contrib/
-web/libraries/
+/web/core/
+/web/libraries/
+/web/modules/contrib/
+/web/themes/contrib/
+/web/profiles/contrib/
 
-web/sites/default/files/
+/web/sites/*/files/
+/web/sites/*/private/
+/web/sites/*/tmp/
 
-web/sites/default/settings.local.php
-web/sites/default/services.local.yml
+/web/sites/*/settings.local.php
+/web/sites/*/services.local.yml
 
-.drush-lock-update
+.env
+.env.local
+
+/.drush-lock-update
+/drush/contrib/
+
+.vscode/
+.idea/
+*.swp
+*.bak
+.DS_Store
+Thumbs.db
+
+.ddev/.dbimage*
+.ddev/.import-db*
+.ddev/commands/host/
+.ddev/homeadditions/
+.ddev/config.local.yaml
+
+/web/sites/*/simpletest/
+.phpunit.result.cache
+/node_modules/
